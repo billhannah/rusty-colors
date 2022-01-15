@@ -1,5 +1,4 @@
-use crate::helpers::f32::round_to;
-use crate::helpers::f32::clamp;
+use crate::helpers::f32_helper::{clamp, round_to};
 
 /// Represents the [sRGB](https://www.w3.org/TR/css-color-4/#numeric-srgb) colorspace, consisting of a
 /// triplet of percentage values (red, green, blue) identifying a point in the sRGB color space. It
