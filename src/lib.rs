@@ -11,4 +11,5 @@
 //! is greater than 1 (100%), it will be clamped to 1.
 
 pub mod color_space;
+pub mod colors;
 pub mod helpers;

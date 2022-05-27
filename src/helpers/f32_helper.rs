@@ -47,6 +47,12 @@ pub fn round_to(value: f32, precision: i32) -> f32 {
     value / multiplier
 }
 
+pub fn as_percentage(value: f32) -> String {
+    let value = clamp(value, 0_f32, 1_f32);
+    let value = value * 100_f32;
+    format!("{}%", round_to(value, 3))
+}
+
 #[cfg(test)]
 mod tests {
     use crate::helpers::f32_helper::{clamp, round_to};
